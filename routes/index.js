@@ -20,12 +20,16 @@ router.get("/", (req, res, next) =>
 router.post('/payment', (req, res, next) =>
 {
   res.set("Access-Control-Allow-Origin", "*");
-  
+
   PaymentInstance.getPaymentLink(req, res);
 })
 
 router.post('/subscription', (req, res, next) => PaymentInstance.getSubscriptionLink(req, res));
 
 router.post('/webhook', (req, res) => PaymentInstance.webhook(req, res));
+
+router.get('/healthz', (req,res) => {
+  res.status(200).send('OK');
+})
 
 module.exports = router;
