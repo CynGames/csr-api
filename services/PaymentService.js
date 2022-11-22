@@ -36,6 +36,9 @@ class PaymentService
       }
     });
 
+    console.log("DENTRO DE PAYMENT SERVICE");
+    console.log(payment);
+
     return payment.data;
   }
 
