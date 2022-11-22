@@ -7,22 +7,16 @@ class PaymentController {
 
     async getPaymentLink(req, res) {
 
-        try {
-            const payment = await this
-                .paymentService
-                .createPayment(req.body);
+        console.log({message: "PAYMENT LINK PRE"})
 
-            console.log({message: "PAYMENT LINK", content: payment.init_point})
+        const payment = await this
+            .paymentService
+            .createPayment(req.body);
 
-            return res.status(300).json(open(payment.init_point));
-        } catch (error) {
-            console.log(error);
-            return res
-                .status(500)
-                .json({
-                    error: true, msg: `Hubo un error con PAYMENT`
-                });
-        }
+        console.log({message: "PAYMENT LINK POST", content: payment.init_point})
+
+        return res.status(300).json(open(payment.init_point));
+
     }
 
     async getSubscriptionLink(req, res) {
