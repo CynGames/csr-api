@@ -16,7 +16,7 @@ class PaymentController
         .paymentService
         .createPayment(req.body);
 
-      console.log(req.body);
+      console.log(payment.init_point);
 
       return res.json(open(payment.init_point));
     } catch (error)
