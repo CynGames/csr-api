@@ -18,15 +18,10 @@ router.get("/", (req, res, next) =>
 // Leer el body del request y recibir la informacion del frontend.
 // Esto se va a pasar al controller y luego al service para popular la data.
 router.post('/payment', (req, res, next) =>
-{
-  // res.set("Access-Control-Allow-Origin", "*");
+    PaymentInstance.getPaymentLink(req, res));
 
-  console.log({message: "PAYMENT ROUTE"})
-
-  PaymentInstance.getPaymentLink(req, res);
-})
-
-router.post('/subscription', (req, res, next) => PaymentInstance.getSubscriptionLink(req, res));
+router.post('/subscription', (req, res, next) =>
+    PaymentInstance.getSubscriptionLink(req, res));
 
 router.post('/webhook', (req, res) => PaymentInstance.webhook(req, res));
 

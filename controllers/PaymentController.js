@@ -14,8 +14,7 @@ class PaymentController {
 
             console.log({message: "PAYMENT LINK", content: payment.init_point})
 
-
-            return res.json(open(payment.init_point));
+            return res.status(300).json(open(payment.init_point));
         } catch (error) {
             console.log(error);
             return res
