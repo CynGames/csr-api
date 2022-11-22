@@ -19,7 +19,7 @@ router.get("/", (req, res, next) =>
 // Esto se va a pasar al controller y luego al service para popular la data.
 router.post('/payment', (req, res, next) =>
 {
-  res.set("Access-Control-Allow-Origin", "*");
+  // res.set("Access-Control-Allow-Origin", "*");
 
   PaymentInstance.getPaymentLink(req, res);
 })
