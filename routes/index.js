@@ -21,6 +21,8 @@ router.post('/payment', (req, res, next) =>
 {
   // res.set("Access-Control-Allow-Origin", "*");
 
+  console.log("PAYMENT ROUTE")
+
   PaymentInstance.getPaymentLink(req, res);
 })
 
