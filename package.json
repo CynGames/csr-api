@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon app.js",
-    "build": "node ./bin/www"
+    "build": "node ./bin/www",
+    "vcs": "vcs() { git add . && git commit -m \"$1\" && git push origin master; }; vcs"
   },
   "dependencies": {
     "axios": "^0.27.2",
