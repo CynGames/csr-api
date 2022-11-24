@@ -1,32 +1,10 @@
-const express = require('express');
-const router = express.Router();
+const { Router } = require('express');
+const paymentRouter = require('./payment.routes');
+const subscriptionRouter = require('./subscription.routes');
 
-const PaymentController = require("../controllers/PaymentController");
-const PaymentService = require("../services/PaymentService");
+const router = Router();
 
-const PaymentInstance = new PaymentController(new PaymentService());
-
-
-router.get("/", (req, res, next) =>
-{
-  return res.json({
-    "/payment": "Generates a Payment Link",
-    "/subscription": "Generates a Subscription Link"
-  })
-})
-
-// Leer el body del request y recibir la informacion del frontend.
-// Esto se va a pasar al controller y luego al service para popular la data.
-router.post('/payment', (req, res, next) =>
-    PaymentInstance.getPaymentLink(req, res));
-
-router.post('/subscription', (req, res, next) =>
-    PaymentInstance.getSubscriptionLink(req, res));
-
-router.post('/webhook', (req, res) => PaymentInstance.webhook(req, res));
-
-router.get('/healthz', (req,res) => {
-  res.status(200).send('OK');
-})
+router.use('/payment', paymentRouter);
+router.use('/subscription', subscriptionRouter);
 
 module.exports = router;
