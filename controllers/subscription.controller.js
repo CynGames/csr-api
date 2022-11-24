@@ -13,7 +13,7 @@ module.exports = {
         res,
         code: 201,
         message: 'Subscription successful',
-        body: res.init_point,
+        body: {},
       });
     } catch (error) {
       next(error);

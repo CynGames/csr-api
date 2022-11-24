@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ba093f6-dcbc-4be5-a482-b506b00239de" name="Changes" comment="Dockerfile permission">
+      <change afterPath="$PROJECT_DIR$/controllers/health.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/health.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/subscription.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/subscription.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +82,7 @@
       <workItem from="1669136399970" duration="11218000" />
       <workItem from="1669208798887" duration="202000" />
       <workItem from="1669235098506" duration="2000" />
-      <workItem from="1669239255715" duration="14217000" />
+      <workItem from="1669239255715" duration="17729000" />
     </task>
     <task id="LOCAL-00001" summary="Re-do of a backend">
       <created>1669301431913</created>
@@ -107,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669302542472</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Dockerfile permission">
+      <created>1669302635011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669302635011</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
