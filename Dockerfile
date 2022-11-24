@@ -6,7 +6,6 @@ COPY package*.json ./
 
 RUN npm install
 COPY . .
-
-RUN ["chmod", "+x", "bin/csr-api"]
+#RUN ["chmod", "+x", "bin/csr-api"]
 
 CMD ["npm", "start"]
