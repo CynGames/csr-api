@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ba093f6-dcbc-4be5-a482-b506b00239de" name="Changes" comment="Dockerfile permission">
-      <change afterPath="$PROJECT_DIR$/utils/payment.util.js" afterDir="false" />
+    <list default="true" id="4ba093f6-dcbc-4be5-a482-b506b00239de" name="Changes" comment="MercadoPago implementation using docker.">
+      <change beforePath="$PROJECT_DIR$/.idea/csr-backend-mpapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csr-backend-mpapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/payment.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/payment.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csr/src/components/3_Body/3_DonationSegment/3_DataSubmitter/DataSubmitter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../csr/src/components/3_Body/3_DonationSegment/3_DataSubmitter/DataSubmitter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../csr" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Web/csr-backend-mpapi",
+    "last_opened_file_path": "D:/Web/csr",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -56,6 +57,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "D:\\Web\\csr-backend-mpapi\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "D:\\Web\\csr\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,7 +83,7 @@
       <workItem from="1669136399970" duration="11218000" />
       <workItem from="1669208798887" duration="202000" />
       <workItem from="1669235098506" duration="2000" />
-      <workItem from="1669239255715" duration="20035000" />
+      <workItem from="1669239255715" duration="20897000" />
     </task>
     <task id="LOCAL-00001" summary="Re-do of a backend">
       <created>1669301431913</created>
@@ -125,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669322164598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="MercadoPago implementation using docker.">
+      <created>1669324510827</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669324510827</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +155,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Re-do of a backend" />
     <MESSAGE value="Dockerfile permission" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerfile permission" />
+    <MESSAGE value="MercadoPago implementation using docker." />
+    <option name="LAST_COMMIT_MESSAGE" value="MercadoPago implementation using docker." />
   </component>
 </project>

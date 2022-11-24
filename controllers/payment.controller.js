@@ -12,8 +12,6 @@ module.exports = {
       if (!payment.init_point)
         throw new ErrorObject('Error generating payment link', 500);
 
-      open(payment.init_point);
-
       console.log({ message: 'init point' }, payment.init_point);
       endpointResponse({
         res,
